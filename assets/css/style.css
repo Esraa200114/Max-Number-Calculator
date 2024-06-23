@@ -1,0 +1,91 @@
+/* Base Styles */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(97, 138, 254, 0.9);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+/* Main Content Container */
+.main-content {
+    background: rgb(242, 239, 239);
+    border-radius: 12px;
+    box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Heading Styles */
+h1 {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 2em;
+}
+
+/* Separator Styles */
+hr {
+    border-top: 1px inset rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Label Styles */
+label {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: black;
+}
+
+/* Input Styles */
+input {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 95px -30px;
+    background-color: rgba(255, 255, 255);
+    padding: 0.8rem;
+    border-radius: 0.75rem;
+}
+
+/* Focus Styles */
+input:focus {
+    outline: none;
+}
+
+/* Error Message Styles */
+span {
+    color: red;
+}
+
+/* Button Styles */
+#calculate-btn {
+    color: white;
+    border: 2px solid white;
+    background-color: rgb(97, 138, 254);
+    font-size: 1.438rem;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 8px 8px;
+}
+
+/* Paragraph Styles */
+p {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: black;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 599px) {
+    input, #calculate-btn {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    input, #calculate-btn {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    input, #calculate-btn {
+        width: 50%;
+    }
+}
